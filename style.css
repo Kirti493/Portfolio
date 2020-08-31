@@ -1,0 +1,316 @@
+
+.text-box{
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.text-box span{
+    text-transform: uppercase;
+    display: block;
+}
+.text-box .text1{
+    color: white; 
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: black;
+    position: relative;
+    animation: text 3s 1;
+}
+.text-box .text2{
+    font-size: 30px;
+    color: #4c6cb0;
+
+}
+@keyframes text {
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+    10%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    50%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+/* myskills */
+.myskills{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.myskills h2{
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-size: 40px;
+}
+.myskills h3{
+    color: black;
+}
+.skillitem{
+    display: flex;
+}
+.programming{
+    margin-left: 5%;
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+.software{
+    margin-left: 5%;
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+.programming h4{
+    color:white;
+    text-align: center;
+    background-color: #4c6cb0;
+}
+.software h4{
+    color:white;
+    text-align: center;
+    background-color: #4c6cb0;
+}
+.bar{
+    background: white;
+    display: block;
+    height: 12px;
+    border: solid #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.bar span{
+    height: 10px;
+    float: left;
+    background: rgb(138, 139, 224);
+}
+.html{width:80%; animation: html 3s;}
+.css{width:60%; animation: css 3s;}
+.js{width:60%; animation: js 3s;}
+.java{width:80%; animation: html 3s;}
+.bootstrap{width:80%; animation: html 3s;}
+.nodejs{width:60%; animation: html 3s;}
+.sql{width:90%; animation: sql 3s;}
+@keyframes html{
+    0%{width: 0%}
+    100%{widows: 80%;}
+}
+@keyframes css{
+    0%{width: 0%}
+    100%{widows: 60%;}
+}
+@keyframes js{
+    0%{width: 0%}
+    100%{widows: 60%;}
+}
+@keyframes java{
+    0%{width: 0%}
+    100%{widows: 80%;}
+}
+@keyframes bootstrap{
+    0%{width: 0%}
+    100%{widows: 80%;}
+}
+@keyframes nodejs{
+    0%{width: 0%}
+    100%{widows: 60%;}
+}
+@keyframes sql{
+    0%{width: 0%}
+    100%{widows: 90%;}
+}
+.barr{
+    background:white;
+    display: block;
+    height: 12px;
+    border: solid #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.barr span{
+    height: 10px;
+    float: left;
+    background: rgb(138, 139, 224);
+}
+.matlab{width:90%; animation: matlab 3s;}
+.pscad{width:70%; animation: pscad 3s;}
+.msoffice{width:100%; animation: msoffice 3s;}
+.autocad{width:50%; animation: autocad 3s;}
+.pspice{width:70%; animation: pspice 3s;}
+@keyframes matlab{
+    0%{width: 0%}
+    100%{widows: 90%;}
+}
+@keyframes pscad{
+    0%{width: 0%}
+    100%{widows: 70%;}
+}
+@keyframes msoffice{
+    0%{width: 0%}
+    100%{widows: 100%;}
+}
+@keyframes autocad{
+    0%{width: 0%}
+    100%{widows: 50%;}
+}
+@keyframes pspice{
+    0%{width: 0%}
+    100%{widows: 70%;}
+}
+/* experience */
+.experience h2{
+    color:rgb(250, 244, 244);
+    text-align: center;
+    margin-top: 2%;
+    font-size: 40px;
+    border-radius: 10px;
+}
+.jobs{
+    position: relative;
+    margin: 1% auto;
+    width: 100%;
+}
+.jobs:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background: rgb(11, 158, 216);
+}
+.jobs ul{
+    margin:0;
+    padding:0;
+}
+.jobs ul li{
+    list-style: none;
+    line-height: normal;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.jobs ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+.jobs ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+.jobs ul li:nth-child(odd):before{
+    content:'';
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 10%;
+    box-shadow: 0 0 0 3px white;
+}
+.jobs ul li:nth-child(even):before{
+    content:'';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 10%;
+    box-shadow: 0 0 0 3px white;
+}
+.jobs ul li h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color:  rgba(4, 4, 160, 0.521);
+    font-size: 35px;
+}
+.jobs ul li p{
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 20px;
+}
+.jobs ul li:nth-child(odd)
+.time
+{
+    position: absolute;
+    top: 12px;
+    right: -250px;
+    margin: 0;
+    font-size: 20px;
+    padding: 4px 4px;
+    background:none;
+    color: #000;
+    border-radius: 50px;
+    box-shadow: 0 0 0 3px goldenrod;
+}
+.jobs ul li:nth-child(even)
+.time
+{
+    position: absolute;
+    top: 12px;
+    left: -250px;
+    margin: 0;
+    font-size: 20px;
+    padding: 4px 4px;
+    background:none;
+    color: #000;
+    border-radius: 50px;
+    box-shadow: 0 0 0 3px goldenrod;
+}
+.justify{
+    color: black;
+}
+
+.jobs ul li:nth-child(odd)
+.ttime
+{
+    position: absolute;
+    top: 30px;
+    right: -150px;
+    margin: 0;
+    font-size: 20px;
+    padding: 4px 4px;
+    background:none;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px goldenrod;
+}
+.jobs ul li:nth-child(even)
+.ttime
+{
+    position: absolute;
+    top: 30px;
+    left: -150px;
+    margin: 0;
+    font-size: 20px;
+    padding: 4px 4px;
+    background:none;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px goldenrod;
+}
+.content p{
+    color: black;
+}
+.education h2{
+    color:white;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 40px;
+    border-radius: 10px;
+
+}
